@@ -1,0 +1,60 @@
+Problem 6: Pass or Fail with Retake
+
+Ask for:
+
+Quiz Score
+Exam Score
+
+A student passes if:
+
+Quiz score is at least 50 AND
+Exam score is at least 50
+
+Otherwise, the student can Retake if either score is 40 or above.
+
+Example:
+
+Quiz: 45
+Exam: 70
+
+Retake Allowed
+
+Use:
+
+&&
+||
+
+
+SOURCE CODE
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+     System.out.print("Quiz Score ");
+     int quiz = sc.nextInt();
+     
+     System.out.print("Exam Score ");
+     int exam = sc.nextInt();
+     
+     if (quiz >= 50 && exam >= 50) {
+         
+         System.out.println("Passed!");
+         
+     }
+     else if (quiz >= 40 || exam >= 40) {
+         
+         System.out.println("Retake Allowed");
+     }
+     
+     else {
+         
+         System.out.println("Failed");
+         
+     }
+
+    }
+}
