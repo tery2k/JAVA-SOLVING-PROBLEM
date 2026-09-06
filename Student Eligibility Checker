@@ -1,0 +1,52 @@
+Create a Java program that asks the user for:
+
+Student's age
+Quiz score
+Attendance percentage
+Conditions:
+
+A student is eligible to take the final exam if:
+
+Age is 18 or above AND
+Quiz score is 50 or above AND
+Attendance is 75% or above
+
+If all conditions are true, display:
+
+Eligible for Final Exam
+
+Otherwise, display:
+
+Not Eligible for Final Exam
+
+
+
+SOURCE CODE
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+     System.out.print("age ");
+     int age = sc.nextInt();
+     
+     System.out.print("quiz score ");
+     int score = sc.nextInt();
+     
+     sc.nextLine();
+     
+     System.out.print("attendance percentage ");
+     int atDance = sc.nextInt(); 
+
+     if ( age >= 18 && score >= 50 && atDance >= 75) {
+         
+        System.out.println("Qualified!");
+         
+     } else
+      
+      System.out.println("Not Qualified");
+
+    }
+}
