@@ -1,0 +1,56 @@
+Problem 2: Discount Checker
+
+Ask the user for:
+
+Age
+Is the user a student? (true or false)
+Conditions:
+
+The user gets a discount if:
+
+Age is 60 or above OR
+The user is a student
+
+Use:
+
+||
+Example:
+Enter age: 20
+Are you a student (true/false): true
+
+You are eligible for a discount!
+
+Your condition should be similar to:
+
+if (age >= 60 || student)
+
+
+
+SOURCE CODE
+
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+     System.out.print("age ");
+     int age = sc.nextInt();
+     
+     sc.nextLine();
+     
+     System.out.print("Student? (true or false) ");
+     boolean student = sc.nextBoolean();
+     
+     if (age >= 60 || student == true ) {
+         
+         System.out.print("eligible for a discount");
+     } else  {
+         
+          System.out.print("NOT eligible for a discount");
+     }
+     
+     
+    }
+}
